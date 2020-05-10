@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>Bookmarks</title>
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:300italic,300' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <%= yield %>
   </body>
