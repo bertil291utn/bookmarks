@@ -1,0 +1,53 @@
+.container {
+  width: 500px;
+}
+
+p {
+  margin: 3px 0;
+}
+
+.header h1 {
+  font-family: 'Domine', serif;
+  margin: 50px 0 30px 0;
+}
+
+/* Book */
+.book {
+  margin: 10px 0;
+  border-top: 1px solid #ccc;
+  padding: 6px 0;
+}
+
+.rank-this-week {
+  font-size: 23px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.book .author,
+.publisher,
+.description,
+a {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Review */
+
+.review {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.review .author {
+  font-weight: bold;
+}
+
+.comment {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
