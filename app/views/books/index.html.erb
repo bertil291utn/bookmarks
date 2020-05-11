@@ -1,19 +1,28 @@
-<% @books.each do |book| %>
-  <div class="book">
-    <div class="row">
-      <div class="col-md-1">
-        <p class="rank-this-week"> </p>
-      </div>
-      <div class="col-md-9">
-        <p class="title"> <%=book.title%> </p>
-        <p class="author"><%=book.author%>  </p>
-        <p class="publisher">( <%=book.publisher%> )</p>
-        <p class="description"> <%=book.description%> </p>
-        <%= link_to 'See all Editorial Reviews', book %>
-      </div>
-      <div class="col-md-2">
-        <p class="weeks-on-list">  weeks on list</p>
-      </div>
-    </div>
+<div class="header">
+  <div class="container">
+    <h1>Bookmarks</h1>
   </div>
-<% end %>
+</div>
+<div class="main">
+  <div class="container">
+    <% @books.each do |book| %>
+      <div class="book">
+        <div class="row">
+          <div class="col-md-1">
+            <p class="rank-this-week"> <%=book.rank_this_week%> </p>
+          </div>
+          <div class="col-md-9">
+            <p class="title"> <%=book.title%> </p>
+            <p class="author"><%=book.author%>  </p>
+            <p class="publisher">( <%=book.publisher%> )</p>
+            <p class="description"> <%=book.description%> </p>
+            <%= link_to 'See all Editorial Reviews', book %>
+          </div>
+          <div class="col-md-2">
+            <p class="weeks-on-list">  <%=book.weeks_on_list%> weeks on list</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
